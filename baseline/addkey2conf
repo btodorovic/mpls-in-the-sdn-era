@@ -1,0 +1,32 @@
+#!/usr/bin/perl
+
+die "\nUsage: $0 filename\n\n" if (!@ARGV);
+
+my $HOME=$ENV{'HOME'};
+open (KEY, "<$HOME/.vmmgr/id_rsa.pub") || die "Could not open file: $HOME/.vmmgr/id_rsa.pub.\n";
+($key_type, $key_value) = split(/\ /, <KEY>);
+chomp ($key_value);
+close (KEY);
+
+open (CFG, "<$ARGV[0]") || die "Could not open file $ARGV[0]\n";
+$found=0;
+while (<CFG>) {
+    chomp;
+    exit if (/^hostname/); # Cisco
+    next if (index($_,"$key_type $key_value")<0);
+    $found=1;
+    last;
+}
+close (CFG);
+
+exit if ($found);
+
+open (CFG, ">>$ARGV[0]") || die "Error appending to file $ARGV[0]\n";
+print CFG <<EOF;
+system {
+    root-authentication {
+        $key_type "$key_type $key_value"; ### SSH_KEY
+    }
+}
+EOF
+close (CFG);

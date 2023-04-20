@@ -1,0 +1,8 @@
+#!/bin/sh
+
+ssh x@h2  "show running" | dos2unix > ./h2.full.conf
+ssh x@p2  "show running" | dos2unix > ./p2.full.conf
+ssh x@pe2 "show running" | dos2unix > ./pe2.full.conf
+ssh x@pe4 "show running" | dos2unix > ./pe4.full.conf
+ssh x@rr2 "show running" | dos2unix > ./rr2.full.conf
+

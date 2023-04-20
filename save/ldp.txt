@@ -1,0 +1,198 @@
+
+
+Thu Oct 19 21:26:15.291 UTC
+Local  Outgoing    Prefix             Outgoing     Next Hop        Bytes       
+Label  Label       or ID              Interface                    Switched    
+------ ----------- ------------------ ------------ --------------- ------------
+24004  Pop         10.0.0.24/31       Gi0/0/0/4    10.0.0.5        0           
+     Updated: Oct 19 20:28:27.318
+     Version: 38, Priority: 3
+     Label Stack (Top -> Bottom): { Imp-Null }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/14, MTU: 1500
+     Packets Switched: 0
+
+24005  Pop         10.0.0.22/31       Gi0/0/0/4    10.0.0.5        0           
+     Updated: Oct 19 20:28:27.318
+     Version: 37, Priority: 3
+     Label Stack (Top -> Bottom): { Imp-Null }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/14, MTU: 1500
+     Packets Switched: 0
+
+24006  Pop         10.0.0.18/31       Gi0/0/0/4    10.0.0.5        0           
+     Updated: Oct 19 20:28:27.318
+     Version: 36, Priority: 3
+     Label Stack (Top -> Bottom): { Imp-Null }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/14, MTU: 1500
+     Packets Switched: 0
+
+24007  Pop         10.0.0.10/31       Gi0/0/0/4    10.0.0.5        0           
+     Updated: Oct 19 20:28:27.318
+     Version: 35, Priority: 3
+     Label Stack (Top -> Bottom): { Imp-Null }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/14, MTU: 1500
+     Packets Switched: 0
+
+24008  Pop         10.0.0.6/31        Gi0/0/0/4    10.0.0.5        0           
+     Updated: Oct 19 20:28:27.318
+     Version: 34, Priority: 3
+     Label Stack (Top -> Bottom): { Imp-Null }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/14, MTU: 1500
+     Packets Switched: 0
+
+24009  24012       172.16.0.201/32    Gi0/0/0/4    10.0.0.5        10498       
+     Updated: Oct 19 20:28:27.318
+     Version: 39, Priority: 3
+     Label Stack (Top -> Bottom): { 24012 }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/18, MTU: 1500
+     Packets Switched: 198
+
+24010  24013       10.0.0.12/31       Gi0/0/0/4    10.0.0.5        0           
+     Updated: Oct 19 20:28:27.318
+     Version: 40, Priority: 3
+     Label Stack (Top -> Bottom): { 24013 }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/18, MTU: 1500
+     Packets Switched: 0
+
+24011  24015       172.16.0.202/32    Gi0/0/0/4    10.0.0.5        5029        
+     Updated: Oct 19 20:28:27.318
+     Version: 41, Priority: 3
+     Label Stack (Top -> Bottom): { 24015 }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/18, MTU: 1500
+     Packets Switched: 94
+
+24012  24016       10.0.0.14/31       Gi0/0/0/4    10.0.0.5        0           
+     Updated: Oct 19 20:28:27.318
+     Version: 42, Priority: 3
+     Label Stack (Top -> Bottom): { 24016 }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/18, MTU: 1500
+     Packets Switched: 0
+
+24013  Pop         172.16.0.11/32     Gi0/0/0/3    10.0.0.0        40382       
+     Updated: Oct 19 20:28:27.828
+     Version: 48, Priority: 3
+     Label Stack (Top -> Bottom): { Imp-Null }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/14, MTU: 1500
+     Packets Switched: 802
+
+24014  299776      172.16.0.1/32      Gi0/0/0/3    10.0.0.0        0           
+     Updated: Oct 19 20:28:27.828
+     Version: 49, Priority: 3
+     Label Stack (Top -> Bottom): { 299776 }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/18, MTU: 1500
+     Packets Switched: 0
+
+       24017       172.16.0.1/32      Gi0/0/0/4    10.0.0.5        0           
+     Updated: Oct 19 20:28:27.828
+     Version: 49, Priority: 3
+     Label Stack (Top -> Bottom): { 24017 }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 1, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/18, MTU: 1500
+     Packets Switched: 0
+
+24015  Unlabelled  10.0.0.8/31        Gi0/0/0/3    10.0.0.0        0           
+     Updated: Oct 19 20:28:23.259
+     Version: 43, Priority: 3
+     Label Stack (Top -> Bottom): { Unlabelled }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/14, MTU: 1500
+     Packets Switched: 0
+
+       24018       10.0.0.8/31        Gi0/0/0/4    10.0.0.5        0           
+     Updated: Oct 19 20:28:27.318
+     Version: 43, Priority: 3
+     Label Stack (Top -> Bottom): { 24018 }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 1, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/18, MTU: 1500
+     Packets Switched: 0
+
+24016  Unlabelled  10.0.0.20/31       Gi0/0/0/3    10.0.0.0        0           
+     Updated: Oct 19 20:28:23.259
+     Version: 44, Priority: 3
+     Label Stack (Top -> Bottom): { Unlabelled }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/14, MTU: 1500
+     Packets Switched: 0
+
+       24019       10.0.0.20/31       Gi0/0/0/4    10.0.0.5        0           
+     Updated: Oct 19 20:28:27.318
+     Version: 44, Priority: 3
+     Label Stack (Top -> Bottom): { 24019 }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 1, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/18, MTU: 1500
+     Packets Switched: 0
+
+24017  Unlabelled  10.0.0.16/31       Gi0/0/0/3    10.0.0.0        0           
+     Updated: Oct 19 20:28:23.259
+     Version: 45, Priority: 3
+     Label Stack (Top -> Bottom): { Unlabelled }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/14, MTU: 1500
+     Packets Switched: 0
+
+       24020       10.0.0.16/31       Gi0/0/0/4    10.0.0.5        0           
+     Updated: Oct 19 20:28:27.318
+     Version: 45, Priority: 3
+     Label Stack (Top -> Bottom): { 24020 }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 1, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/18, MTU: 1500
+     Packets Switched: 0
+
+24018  Unlabelled  10.0.0.2/31        Gi0/0/0/3    10.0.0.0        0           
+     Updated: Oct 19 20:28:23.259
+     Version: 27, Priority: 3
+     Label Stack (Top -> Bottom): { Unlabelled }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/14, MTU: 1500
+     Packets Switched: 0
+
+24019  Pop         172.16.0.2/32      Gi0/0/0/4    10.0.0.5        5194        
+     Updated: Oct 19 20:28:27.318
+     Version: 33, Priority: 3
+     Label Stack (Top -> Bottom): { Imp-Null }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/14, MTU: 1500
+     Packets Switched: 106
+
+24020  24023       172.16.0.44/32     Gi0/0/0/4    10.0.0.5        4717088     
+     Updated: Oct 19 20:28:27.318
+     Version: 50, Priority: 3
+     Label Stack (Top -> Bottom): { 24023 }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/18, MTU: 1500
+     Packets Switched: 3256
+
+24021  Unlabelled  10.0.0.0/8         Mg0/0/CPU0/0 10.102.191.254  0           
+     Updated: Oct 19 20:28:23.259
+     Version: 30, Priority: 3
+     Label Stack (Top -> Bottom): { Unlabelled }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/14, MTU: 1500
+     Packets Switched: 0
+
+24022  Unlabelled  66.129.255.62/32   Mg0/0/CPU0/0 10.102.191.254  0           
+     Updated: Oct 19 20:28:23.259
+     Version: 31, Priority: 3
+     Label Stack (Top -> Bottom): { Unlabelled }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/14, MTU: 1500
+     Packets Switched: 0
+
+24023  Unlabelled  172.16.0.0/12      Mg0/0/CPU0/0 10.102.191.254  0           
+     Updated: Oct 19 20:28:23.259
+     Version: 32, Priority: 3
+     Label Stack (Top -> Bottom): { Unlabelled }
+     NHID: 0x0, Encap-ID: N/A, Path idx: 0, Backup path idx: 0, Weight: 0
+     MAC/Encaps: 14/14, MTU: 1500
+     Packets Switched: 0
+

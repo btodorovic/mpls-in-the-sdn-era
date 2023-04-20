@@ -1,0 +1,20 @@
+If LDP-signaled L2VPN is configured, you MUST turn LDP on explicitely, only on lo0.0 though.
+L2VPN @ Cisco doesn't work, I didn't have nerves/patience to test it thoroughly.
+
+interfaces {
+    lo0 {
+        unit 0 {
+            family mpls;
+        }
+    }
+}
+
+protocols {
+    mpls {
+        interface lo0.0;
+    }
+    ldp {
+        interface lo0.0;
+    }
+}
+
