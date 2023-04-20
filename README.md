@@ -1,6 +1,7 @@
 # "MPLS in the SDN Era" (Antonio Sanchez Monge / Krzysztof Szarkowicz)
 
-Original topology from Ato/Krzysztof's famous MPLS book. Good to practice.
+Original topology from [Ato/Krzysztof's famous MPLS book](https://www.oreilly.com/library/view/mpls-in-the/9781491905449/).
+Good to practice for certification exams and self-study of all kinds.
 
 ![topology](topology.png)
 
