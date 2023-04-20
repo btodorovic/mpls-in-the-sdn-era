@@ -47,20 +47,31 @@ foreach $rtr (sort keys %hostname) {
     open (CONFIG, "<$rtr.full.conf") || next;
     open (NEWCONF, ">$rtr.full.new") || die;
     $old_gw = '';
-    $fxp = 0;
+    $ios = 0;
     while (<CONFIG>) {
 	chomp;
+	s/\r$//g;
 #	if (/fxp0\ \{/ || /em0\ \{/ || /ge-0\/0\/0\ / || /MgmtEth0/) {
-	if (/fxp0\ \{/ || /em0\ \{/ || /MgmtEth0/) {
+	if (/fxp0\ \{/ || /em0\ \{/ || /MgmtEth0/ || /GigabitEthernet0\/0$/ || /re0:mgmt-0\ \{/) {
 	    $fxp=1;
-	    $trailer = (/MgmtEth0/ ? '' : ';');
+	    $trailer = (/MgmtEth0|GigabitEthernet/ ? '' : ';');
+            $ios = 1 if (/GigabitEthernet0\/0$/);
 	}
+        if (/^interfaces {/) {
+            $fxp = 0;
+	    print NEWCONF "$_\n";
+            next;
+        }
 	if ($fxp && /address\ 10\./) {
 	    $line = $_;
 	    $line =~ s/address.*$/address\ /g;
-            ($dummy, $preflen) = split(/\//, ($netaddr=addrandmask2cidr($ip{$rtr},$netmask)));
-	    $line .= "$ip{$rtr}/$preflen$trailer";
-	    print NEWCONF "$line\n";
+	    if ($ios) {
+		print NEWCONF " ip address $ip{$rtr} $netmask\n";
+	    } else {
+                ($dummy, $preflen) = split(/\//, ($netaddr=addrandmask2cidr($ip{$rtr},$netmask)));
+	        $line .= "$ip{$rtr}/$preflen$trailer";
+	        print NEWCONF "$line\n";
+	    }
 	    $fxp=0;
 	    next;
 	} elsif (/backup-router/) {
